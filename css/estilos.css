@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  color: white;
+  background: url("https://image.tmdb.org/t/p/original/nvVgLQWbIIFKchsvyQHEFanMTAX.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+div#product-list {
+  margin: auto;
+  justify-content: center;
+}
+
+.product,
+.cart-item {
+  border: 2px solid #00bfff;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(28, 28, 28, 0.9);
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+  box-sizing: border-box;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-flow: column;
+  max-width: 340px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+}
+.product img,
+.cart-item img {
+  max-height: 180px;
+  margin-bottom: 1em;
+}
+
+#cart {
+  margin-bottom: 2em;
+}
+
+.toast-container {
+  z-index: 1100;
+}
+
+.toast {
+  opacity: 1;
+  background-color: blue;
+}
+
+.toast.info .toast-header {
+  background-color: #bee5eb;
+  color: #0c5460;
+}
+
+.toast.error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.toast.error .toast-header {
+  background-color: #f5c6cb;
+  color: #721c24;
+}
+
+.toast.warning {
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+.toast.warning .toast-header {
+  background-color: #ffeeba;
+  color: #856404;
+}
+
+.toast.success {
+  background-color: #d4edda; /* Light green background */
+  border-color: #c3e6cb; /* Green border */
+  color: #155724; /* Dark green text color */
+}
+
+.toast.success .toast-header {
+  background-color: #c3e6cb; /* Green header background */
+  color: #155724; /* Dark green header text color */
+}
